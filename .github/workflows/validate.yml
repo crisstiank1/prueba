@@ -1,0 +1,32 @@
+name: Validar HTML y CSS
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Instalar Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Instalar dependencias
+      run: |
+        npm install -g htmlhint stylelint stylelint-config-standard
+
+    - name: Validar HTML
+      run: htmlhint **/*.html
+
+    - name: Validar CSS
+      run: |
+        echo '{ "extends": "stylelint-config-standard" }' > .stylelintrc.json
+        stylelint "**/*.css"
