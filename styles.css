@@ -1,8 +1,290 @@
+
+/* === ESTILO GLOBAL === */
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    margin: 0;
-    padding: 2rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Barra navegacion*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Submenú desplegable */
+.submenu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  padding: 10px 16px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#inicio {
+  background-color: #e0f2f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#inicio h2 {
+  font-size: 32px;
+  color: #1d3557;
+}
+
+#inicio p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#noticias {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+#noticias article {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+#noticias h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+#noticias p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#noticias a {
+  color: #e63946;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#noticias a:hover {
+  text-decoration: underline;
+}
+
+
+#noticias-deportes article {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#noticias-deportes article img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#noticias-deportes article div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#noticias-deportes article h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #222;
+}
+
+#noticias-deportes article p {
+    margin: 10px 0;
+}
+
+#noticias-deportes article a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#noticias-deportes article a:hover {
+    text-decoration: underline;
+}
+
+#deportes {
+  background-color: #f1faee;
+  padding: 40px 20px;
+}
+
+#deportes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d3557;
+}
+
+#deportes ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#deportes li a {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#deportes li a:hover {
+  background-color: #457b9d;
+}
+
+
+
+#blog {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+#blog article {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 5px solid #1d3557;
+  background-color: #f8f9fa;
+}
+
+#blog h3 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+#blog a {
+  color: #1d3557;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#blog a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: #1d3557;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #a8dadc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #noticias-deportes article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #noticias-deportes article img {
+        width: 100%;
+    }
+
+    #noticias-deportes article div {
+        padding-top: 10px;
+    }
+}

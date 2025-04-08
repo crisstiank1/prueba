@@ -1,13 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi sitio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DeporNoticias</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hola, GitHub Pages + Actions</h1>
-  <p>Cristiano Ronaldo</p>
+    <header>
+        <div class="logo">
+          <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-e5b8-5230-8c0f-dbff259deebb/raw?se=2025-04-08T02%3A03%3A15Z&sp=r&sv=2024-08-04&sr=b&scid=1943dda9-6a3d-55b1-8e2f-9d2d0926af37&skoid=aa8389fc-fad7-4f8c-9921-3c583664d512&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-07T08%3A58%3A21Z&ske=2025-04-08T08%3A58%3A21Z&sks=b&skv=2024-08-04&sig=v3ZS038e%2BtJm7nPjkErzAJP0HvtJfngGqLynlC%2BIMEU%3D" alt="">
+            <h1>DeporNoticias</h1>
+        </div>
+        <nav>
+          <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li class="submenu">
+                  <a href="#noticias">Noticias</a>
+                  <ul class="dropdown">
+                      <li><a href="#futbol">Fútbol</a></li>
+                      <li><a href="#baloncesto">Baloncesto (NBA)</a></li>
+                      <li><a href="#tenis">Tenis</a></li>
+                      <li><a href="#rugby">Rugby</a></li>
+                      <li><a href="#formula1">Fórmula 1</a></li>
+                      <li><a href="#atletismo">Atletismo</a></li>
+                  </ul>
+              </li>
+              <li><a href="#blog">Blog</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a DeporNoticias</h2>
+            <p>Todo lo que necesitas saber sobre tus deportes favoritos, con noticias, resultados, análisis, y mucho más.</p>
+        </section>
+
+        <section id="deportes">
+          <h2>Deportes Destacados</h2>
+          <ul>
+              <li><a href="#futbol">Fútbol</a></li>
+              <li><a href="#baloncesto">Baloncesto (NBA)</a></li>
+              <li><a href="#tenis">Tenis</a></li>
+              <li><a href="#rugby">Rugby</a></li>
+              <li><a href="#formula1">Fórmula 1</a></li>
+              <li><a href="#atletismo">Atletismo</a></li>
+          </ul>
+      </section>
+
+      <section id="noticias">
+          <h2>Últimas Noticias</h2>
+          <article>
+              <h3>NBA: Los Lakers Consiguen la Clasificación a los Playoffs</h3>
+              <p>El equipo de Los Angeles Lakers ha asegurado su lugar en los playoffs de la NBA...</p>
+              <a href="#">Leer más</a>
+          </article>
+          <article>
+              <h3>Mundial de Rugby: Los Pumas Sorprenden a Todos</h3>
+              <p>El equipo de Argentina ha dado la sorpresa en el Mundial de Rugby...</p>
+              <a href="#">Leer más</a>
+          </article>
+          <article>
+              <h3>F1: Verstappen Gana en Suzuka y Aumenta su Ventaja</h3>
+              <p>El piloto neerlandés Max Verstappen se impuso en el Gran Premio de Japón con una actuación impecable...</p>
+              <a href="#">Leer más</a>
+          </article>
+          <article>
+              <h3>Tenis: Iga Swiatek Campeona del Miami Open</h3>
+              <p>La tenista polaca logró su segundo título del año tras vencer en la final a Aryna Sabalenka...</p>
+              <a href="#">Leer más</a>
+          </article>
+      </section>
+
+      <section id="noticias-deportes">
+        <h2>Noticias por Deporte</h2>
+
+        <section id="futbol">
+            <h3>Fútbol</h3>
+            <article>
+                <img src="https://th.bing.com/th/id/OIP.Z1weKhlPlO7eUGFDuX8p_gHaEK?w=1200&h=675&rs=1&pid=ImgDetMain" alt="Celebración del Real Madrid">
+                <div>
+                    <h4>Champions League: El Real Madrid Remonta en el Último Minuto</h4>
+                    <p>Con un gol agónico de Jude Bellingham, el Real Madrid venció al Manchester City 3-2 en un partido de infarto disputado en el Santiago Bernabéu. El equipo blanco mostró su espíritu competitivo habitual en la Champions, logrando darle la vuelta al marcador en los últimos cinco minutos del encuentro.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="baloncesto">
+            <h3>Baloncesto (NBA)</h3>
+            <article>
+                <img src="https://eldiariony.com/wp-content/uploads/sites/2/2023/04/GettyImages-1486638857.jpg?w=1200" alt="Stephen Curry lanzando a canasta">
+                <div>
+                    <h4>Stephen Curry Anota 50 Puntos y Rompe Récord</h4>
+                    <p>Stephen Curry lideró a los Golden State Warriors con una exhibición ofensiva extraordinaria, anotando 50 puntos contra los Denver Nuggets. Con esta actuación, se convierte en el jugador con más partidos de 50 puntos en la historia de la franquicia.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="tenis">
+            <h3>Tenis</h3>
+            <article>
+                <img src="https://th.bing.com/th/id/OIP.qUt1SosCWHbGTkkbVx18agHaEK?rs=1&pid=ImgDetMain" alt="Carlos Alcaraz celebrando su victoria">
+                <div>
+                    <h4>Alcaraz Derrota a Djokovic en un Duelo Épico</h4>
+                    <p>En una de las mejores finales del año, Carlos Alcaraz venció a Novak Djokovic en tres intensos sets en Indian Wells. El joven español mostró una madurez impresionante y se consolida como una de las grandes promesas del tenis mundial.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="rugby">
+            <h3>Rugby</h3>
+            <article>
+                <img src="https://th.bing.com/th/id/OIP.rR5WH0QucMy-NNGHjRotjwHaEm?rs=1&pid=ImgDetMain" alt="Jugadores de rugby en acción">
+                <div>
+                    <h4>Francia y Sudáfrica se Enfrentarán en la Gran Final</h4>
+                    <p>Las selecciones de Francia y Sudáfrica disputarán la final del Mundial de Rugby tras imponerse con autoridad en semifinales. La final promete ser un enfrentamiento titánico entre dos potencias del rugby mundial.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="formula1">
+            <h3>Fórmula 1</h3>
+            <article>
+                <img src="https://th.bing.com/th/id/R.f2741579ea767e994aba4c0741af3bc1?rik=3wxqcfQaSRfL8Q&pid=ImgRaw&r=0" alt="Nuevo monoplaza de Ferrari">
+                <div>
+                    <h4>Ferrari Presenta Su Nuevo Monoplaza para la Temporada 2025</h4>
+                    <p>La Scuderia Ferrari reveló en Maranello su nuevo monoplaza SF-25, diseñado para pelear por el título mundial en la próxima temporada. Charles Leclerc y Carlos Sainz se mostraron optimistas con el rendimiento en las primeras pruebas.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="atletismo">
+            <h3>Atletismo</h3>
+            <article>
+                <img src="https://th.bing.com/th/id/R.a687e89001dbc03672c01476a6e8774f?rik=yb1GQJuBfxd33w&pid=ImgRaw&r=0" alt="Elaine Thompson-Herah cruzando la meta">
+                <div>
+                    <h4>Récord Mundial en los 100 Metros Femeninos</h4>
+                    <p>Elaine Thompson-Herah sorprendió al mundo en el meeting de Doha al detener el cronómetro en 10.47 segundos, batiendo el récord mundial. Se perfila como favorita para los Juegos Olímpicos de París 2024.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+      </section>
+
+
+        <section id="blog">
+            <h2>Blog Deportivo</h2>
+            <article>
+                <h3>¿Por Qué el Baloncesto es el Deporte Más Popular en EE. UU.?</h3>
+                <p>En este artículo exploramos las razones por las cuales el baloncesto ha superado a otros deportes en popularidad...</p>
+                <a href="#">Leer más</a>
+            </article>
+            <article>
+                <h3>La Historia del Rugby y Su Expansión Global</h3>
+                <p>El rugby ha crecido significativamente en popularidad. En este post te contamos cómo llegó a ser uno de los deportes más importantes...</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DeporNoticias. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de privacidad</a> | 
+            <a href="#">Términos de uso</a>
+        </p>
+        <p>
+            Síguenos en nuestras redes sociales: 
+            <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+        </p>
+    </footer>
+
 </body>
 </html>
