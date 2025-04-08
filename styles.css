@@ -35,7 +35,7 @@ header {
   margin: 0;
 }
 
-/* Barra navegacion*/
+/* Barra navegacion */
 nav ul {
   list-style: none;
   padding: 0;
@@ -113,7 +113,7 @@ section {
 
 #noticias {
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 #noticias article {
@@ -149,11 +149,10 @@ section {
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
     display: flex;
-    flex-direction: row;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 15px;
 }
 
@@ -230,7 +229,7 @@ section {
 
 #blog {
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 #blog article {
@@ -273,7 +272,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
     #noticias-deportes article {
         flex-direction: column;
         align-items: center;
